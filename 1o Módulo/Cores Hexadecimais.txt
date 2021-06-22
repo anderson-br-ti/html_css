@@ -1,0 +1,48 @@
+abcdef...
+
+binário 01
+
+numérico 0123456789
+
+hexadecimal 0123456789ABCDEF
+
+RGB = Red Green Blue
+
+# _ _ _ _ _ _
+
+0 = ausência de cor
+
+F = máximo de cor
+
+#000000 > preto
+
+#FFFFFF > branco
+
+#FF0000 > vermelho
+
+//Podemos representar
+cores em CSS:
+
+- pelo nome:
+red
+blue
+yellow
+
+- RGB
+0
+1
+2
+3
+...
+255, onde
+
+0 = ausência
+
+255 = máximo
+
+rgb (255,255,255) > branco
+
+rgb (0,0,255) > azul
+
+- Hexadecimal
+que já foi explicado

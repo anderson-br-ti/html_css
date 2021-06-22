@@ -1,0 +1,121 @@
+body {
+	background: #CCCCCC;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px;
+}
+
+em strong {
+	color: red;
+}
+
+/*
+Anotações:
+
+É considerado uma boa prática
+manter a ordem dos elementos daqui
+igual à ordem do arquivo HTML.
+
+[#] - É a forma como se referencia
+um identificador em um arquivo CSS.
+
+[em strong] - Como a tag <strong> foi usada
+mais de uma vez no código, precisamos marcar
+especificamente que queremos mexer apenas
+naquela que está dentro da tag <em>.
+Para isso, colocamos "em" antes de "strong"
+na referência da tag. 
+
+
+
+
+
+
+																
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																*/
