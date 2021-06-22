@@ -1,0 +1,101 @@
+/*
+É considerado uma boa prática 
+manter a ordem dos elementos daqui
+igual à ordem do arquivo HTML.    												*/
+
+body {
+	
+}
+
+/*
+[#] - É a forma como se referencia um identificador em um arquivo CSS. 			*/
+#banner {
+	width: 100%;/* 
+	[width] - Largura de um elemento. 
+																				*/
+}
+
+/*
+[. /ponto/] - É a forma de referenciar uma classe em CSS.						*/
+.principal {
+	background: #CCCCCC;/*
+	[#CCCCCC] - Cor cinza em hexadecimal.
+																				*/
+	padding: 30px;/*
+	[padding: 30px] - Espaçamento interno no bloco principal,
+	que inclui o título e as 3 frases.
+																				*/																			
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px;
+}
+
+/*
+[em strong] - Como a tag <strong> foi usada mais de uma vez no código, 
+precisamos marcar especificamente que queremos mexer apenas naquela 
+que está dentro da tag <em>. Para isso, colocamos "em" antes de "strong"
+na referência da tag.                       									*/
+em strong {
+	color: red;
+}
+
+/*
+[.itens] - No arquivo HTML, essa classe foi atribuída aos 4 itens da lista.
+Logo, os atributos que forem colocados aqui se aplicarão aos 4 itens da lista.	*/
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;/* 
+	[#FFFFFF] - É a cor branca em hexadecimal. 
+																				*/
+	padding: 20px;/*
+	[padding: 20px] - Espaçamento interno do bloco dos benefícios,
+	que inclui o título, a lista e a imagem. 
+																				*/																			
+}
+
+h2 {
+	text-align: center;
+}
+
+/*
+[ul] - Isso é uma referência ao item da lista, 
+portanto, inclui os 4 itens dela.												*/
+ul {
+	display: inline-block;/* !! Ver IT/HTML/display_inline-block.png !!
+	[display: inline-block] - Ele bloqueia uma largura, mas essa largura é fixa. 
+	Ocupa o tamanho do conteúdo, mas permite mexer na largura e espaçamentos.
+																				*/
+	vertical-align: top;/* !! Ver IT/HTML/vertical-align_top.png !!
+	[vertical-align: top] - Faz com que o item se alinhe
+	com outro item próximo pela linha de cima.                                  
+																				*/
+	width: 20%;/*
+	[width: 20%] - Será a largura máxima dos itens (tópicos) da lista. 
+																				*/
+	margin-right: 15%;/*
+	[margin-right: 15%] - Espaçamento externo à direita,
+	se aplica ao "item de lista" (como um retângulo em volta dela)
+	e varia à direita dependendo do valor atribuído.
+																				*/ 																	
+}
+
+.imagem-beneficios {
+	width: 50%;/* 
+	[width: 50%] - Isso faz com a imagem ocupe 50% da largura da tela.
+																				*/
+}
+
+/*
+*/
