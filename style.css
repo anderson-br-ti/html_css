@@ -1,48 +1,120 @@
-.titulo-principal {
-	padding-left: 20px;
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-#banner {
-	width:100%;
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
 
-.titulo-centralizado {
-	text-align: center;
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
 }
 
-p {
-	text-align: center;
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-#missao {
-	font-size: 20px;
+nav a:hover {
+	color: orange;
+	text-decoration: underline;
 }
 
-em strong {
-	color: #FF0000;
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
-
-ul {
+.produtos li {
 	display: inline-block;
+	text-align: center;
+	width: 30%;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 10px;
 }
 
-.itens {
-	font-style: italic;
-}	
-
-.imagembeneficios {
-	width: 50%;
+.produtos li:hover {
+	border-color: orange;
 }
+
+.produtos li:active {
+	border-color: green;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: white;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/*
+"padding: 20px 0" (header) > margem interna.
+Faz com que tenha um espaço entre
+o menu (conteúdo) e o topo da página.
+
+.caixa: serve para centralizar
+o conteúdo desejado.
+"position: relative" > permite que
+o conteúdo se destaque.
+"width: 940px" > largura padrão na web.
+"margin: 0 auto" > como é a margem externa,
+faz com que o conteúdo fique centralizado
+automaticamente, em qualquer tamanho de tela. 
+
+"position: absolute" > nos permite
+colocar o elemento em questão
+em qualquer lugar da página.
+
+"top: 110px" (nav) > permite posicionar
+o menu do cabeçalho no centro dele.
+"right: 0" deixa ele colado à direita,
+dentro da "caixa" criada pro cabeçalho. 
+
+nav li: referência à lista.
+
+nav a: referência ao link. 
+									*/
+
