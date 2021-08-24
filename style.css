@@ -149,6 +149,71 @@ td, th {
 	padding: 8px 15px;
 }
 
+/* Aqui criaremos o CSS
+do que estará na parte inicial                    */
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	/*Queremos que, independente do tamanho da
+	fonte padrão, o título tenha o dobro do tamanho.
+	Para simbolizar o tamanho da fonte, usamos [em].
+	E então adicionamos a unidade que irá
+	"multiplicar" a proporção do tamanho padrão da fonte.  */
+	font-size: 2em;
+	margin: 0 0 1em;
+	/* O "float" que criamos para o elemento que
+	está acima desse faz esse mudar de posição.
+	Para anular isso, usamos o [clear] e
+	informamos o tipo de float usado.                      */
+	clear: left;
+}
+
+/*Para referenciar algo dentro da "class=principal", 
+usamos [.principal + (o elemento)]                   */
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+/* Não confundir a tag [em] (ênfase)
+que referenciaremos agora com
+a medida referente ao tamanho da fonte.              */
+.principal em {
+	font-style: italic;
+}   
+
+.utensilios {
+	width: 120px;
+	/* Para configurar a imagem de forma que
+	o texto fique em volta dela, usamos o [float].
+	Ele faz com que um elemento "descole" da página,
+	mas o espaço onde ele estava continua sendo ocupado.
+	Também precisamos adicionar o lado em que ele ficará.  */
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.imagembeneficios {
+	width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+/*##################################################*/
 /*
 "padding: 20px 0" (header) > margem interna.
 Faz com que tenha um espaço entre
