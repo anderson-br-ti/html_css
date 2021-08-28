@@ -269,6 +269,36 @@ apenas o 1o item de uma lista
 	margin: 2em auto;
 }
 
+/* Continuando o conceito de pais e filhos:
+para selecionar a tag <p> filha,
+devemos colocar o sinal de [>].                         
+main > p {
+	background: red;
+}
+*/
+/*Para selecionar a
+1a tag <p> irmã,
+usamos a tag [img] como âncora
+e colocamos o "+" para
+referenciar a tag <p> que queremos.                     
+img + p {
+	background: blue;
+}
+*/
+/*Já se quisermos selecionar
+todos os <p> seguintes à <img>,
+usamos o [~].                                           
+img ~ p {
+	background: yellow;
+}
+*/
+/*E para excluir o parágrafo
+que não têm [id: missão],
+usamos "p:not(#missao)".                                
+.principal p:not(#missao) {
+	background: orange;
+}
+*/
 /*##################################################*/
 /*
 "padding: 20px 0" (header) > margem interna.
