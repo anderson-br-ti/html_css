@@ -298,6 +298,49 @@ apenas o 1o item de uma lista
 	margin: 2em auto;
 }
 
+/*Agora faremos uma 'media query' (query = pesquisa)
+Vamos perguntar ao navegador o tamanho daquela tela,
+e se for o tamanho que eu quero,
+eu vou entregar um estilo diferente.
+Pra fazer 'media query', usamos
+[@media], colocamos o tipo de tela que
+estamos buscando, geralmente o valor [screen],
+adicionamos [and] e colocamos a pesquisa entre parênteses.
+Nesse caso, na pesquisa, queremos que todas as telas que
+tenham até 480px entreguem um estilo diferente,
+e, para isso, faremos alterações na página, entre chaves.
+Essas alterações serão aplicadas em telas da medida colocada.
+Para essa pesquisa, escrevemos [(max-width: 480px)]                      */
+@media screen and (max-width: 480px) {
+	/* Mudaremos o que está "fora" da
+	largura da tela do celular,
+	para que seja exibido "dentro" da tela.
+	OBS.: O vídeo da página está com largura fixa,
+	por causa do '<iframe>', logo, mudaremos isso em 'index.html'.         */
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	/* Queremos que, no celular, o logo da Barbearia Alura
+	fique centralizado, portanto, mudaremos o <h1> onde ele está.          */
+	h1 {
+		text-align: center;
+	}
+
+	/* E queremos que o menu, que atualmente é 'absolute',
+	volte a ser 'static'.                                                 */
+	nav {
+		position: static;
+	}
+
+	/* A parte dos benefícios está muito apertada.
+	A lista ocupa 40% da tela e a foto, 60%.
+	Mudaremos ambos para 100%.                                           */
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
 /* Continuando o conceito de pais e filhos:
 para selecionar a tag <p> filha,
 devemos colocar o sinal de [>].                         

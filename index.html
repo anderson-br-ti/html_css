@@ -2,9 +2,17 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<!--Usamos 'name: viewport' na tag meta,
+		ou seja, a quantidade de pixels que tem
+		naquela visualização da tela.
+		E também 'content: width=device-width',
+		para saber a largura do dispositivo.                     -->
+		<meta name="viewport" content="width=device-width">
 		<title>Barbearia Alura</title>
+
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+
 		<!--link da fonte do Google que será usada-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" 
@@ -103,7 +111,11 @@ href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;
 				</div>
 				
 				<div class="video">
-					<iframe width="560" height="315" 
+					<!--O '<iframe>' estava com [width="560"].
+					Essa largura fixa atrapalha quando queremos
+					adaptar o site para celular, portanto,
+					mudaremos para [width="100%"]                  -->
+					<iframe width="100%" height="315" 
 					src="https://www.youtube.com/embed/wcVVXUV0YUY" 
 					title="YouTube video player" frameborder="0" 
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
